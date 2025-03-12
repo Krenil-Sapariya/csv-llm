@@ -1,4 +1,4 @@
-# Ollama Setup Guide
+# Setup Guide
 
 ## Prerequisites
 Ensure that you have a Python virtual environment already set up before proceeding.

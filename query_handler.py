@@ -37,7 +37,5 @@ def answer_question(df, question):
     """
     
     response = ollama.chat(model="llama3", messages=[{"role": "user", "content": prompt}])
-    # print(response)
-    # print('----------------------------------------------')
-    # print(type(response))
+    
     return response.get("message", "No response from LLM").get("content")

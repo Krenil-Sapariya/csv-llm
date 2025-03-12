@@ -9,7 +9,6 @@ def generate_plot(df, plot_type, x_col, y_col):
     if not plot_type:
         raise gr.Error("Select Plot type first!")
 
-    # print('plot called with ', plot_type, x_col, y_col)
     fig, ax = plt.subplots(figsize=(8, 5))
 
     if plot_type.lower().strip() == "scatter":
@@ -24,8 +23,5 @@ def generate_plot(df, plot_type, x_col, y_col):
     ax.set_xlabel(x_col)
     ax.set_ylabel(y_col)
     ax.set_title(f"{plot_type.capitalize()} Plot of {y_col} vs {x_col}")
-
-    print(type(fig))
-    print(fig)
 
     return fig

@@ -1,0 +1,7 @@
+gradio
+pandas
+matplotlib
+plotly
+ollama
+pydantic
+seaborn
